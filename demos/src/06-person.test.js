@@ -1,7 +1,13 @@
 const Person = require('./06-person.js');
 
+// AAA
+// Arrange / Given
+// Act / When
+// Assert / Then
+
 describe('', () => {
   let person;
+  // Arrange
   beforeEach(() => {
     person = new Person('John Doe', 70, 1.75);
   });
@@ -11,13 +17,18 @@ describe('', () => {
   });
 
   test('should return down', () => {
+    // Arrange
     person.weight = 50;
-    expect(person.calcIMC()).toBe('down');
+    // Act
+    const imc = person.calcIMC();
+    // Assert
+    expect(imc).toBe('down');
   });
 
   test('should return normal', () => {
     person.weight = 60;
-    expect(person.calcIMC()).toBe('normal');
+    const imc = person.calcIMC();
+    expect(imc).toBe('normal');
   });
 
 })
