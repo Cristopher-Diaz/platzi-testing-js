@@ -13,5 +13,17 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.test.js',
+          '**/*.spec.js',
+          '**/fakes/*.js',
+          '**/mocks/*.js',
+          '**/helpers/*.js',
+        ],
+      },
+    ],
   },
 };
