@@ -19,6 +19,7 @@ module.exports = {
         devDependencies: [
           '**/*.test.js',
           '**/*.spec.js',
+          '**/*.e2e.js',
           '**/fakes/*.js',
           '**/mocks/*.js',
           '**/helpers/*.js',
